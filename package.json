@@ -1,0 +1,12 @@
+{
+    "name": "backend-template",
+    "version": "1.0.0",
+    "description": "template for back end using NPM, Express, Jest, dotenv, Nodemon.",
+    "main": "server.js",
+    "scripts": {
+        "test": "jest --coverage",
+        "start": "nodemon server"
+    },
+    "author": "Hazey",
+    "license": "MIT"
+}
