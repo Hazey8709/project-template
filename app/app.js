@@ -20,7 +20,7 @@ app.use((req, res, next) => {
     next();
 });
 
-//! Service up
+//! Service Status
 //* localhost:4000/
 app.get("/", (req, res) => {
     res.status(200).json({ message: "service is up" });
