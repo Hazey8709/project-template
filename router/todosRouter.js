@@ -23,7 +23,7 @@ todosRouter.get("/", (req, res, next) => {
 todosRouter.get("/:id", (req, res, next) => {
     todoServiceId(req.params.id)
         .then((result) => {
-            res.status(2000).json(result.data);
+            res.status(200).json(result.data);
         })
         .catch((err) => {
             res.status(500).json({
