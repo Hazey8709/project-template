@@ -1,5 +1,5 @@
 const express = require("express");
-
+const todosRouter = require("../router/todosRouter");
 const app = express();
 
 //! middleware
@@ -28,6 +28,7 @@ app.get("/", (req, res) => {
 });
 
 //!   Routers
+app.use("/todos", todosRouter);
 
 //! Error Handling
 app.use((req, res, next) => {
